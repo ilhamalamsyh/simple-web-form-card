@@ -57,7 +57,7 @@
 </section>
  
 <section id="input-form">
-	<form method="#" action="#">
+	<!-- <form method="#" action="#"> -->
 		<div class="form">
 			<label>Nama</label>
 			<input id="inpName" type = "text" name="name" placeholder="Nama"> 
@@ -87,10 +87,10 @@
 			<input id="inpEmail" type = "email" name="email"> 
 		</div>
 		<div class="form">
-			<input onclick="simpanFrom()" type="submit" name="submit" value="SUBMIT"
+			<input onclick="simpanForm()" type="submit" name="submit" value="SUBMIT"
 			class="bg-blue">
 		</div>
-	</form>
+	<!-- </form> -->
 </section>
 
 <script>
@@ -120,11 +120,26 @@
 		document.getElementById("inpLocation").value = loc;
 		document.getElementById("inpExperience").value = experience;
 		document.getElementById("inpEmail").value = email;
-/*
+
 		function simpanForm() {
-			
+			formMenu.style.display = "none";
+			var name = document.getElementById("inpName").value;
+			var role = document.getElementById("inpRole").value;
+			var availability = document.getElementById("inpAvailable").value;
+			var age = document.getElementById("inpAge").value;
+			var loc = document.getElementById("inpLocation").value;
+			var years = document.getElementById("inpExperience").value;
+			var email = document.getElementById("inpEmail").value;
+
+			document.getElementById("pName").innerHTML = name;
+			document.getElementById("pRole").innerHTML = role;
+			document.getElementById("pAvailable").innerHTML = availability;
+			document.getElementById("pAge").innerHTML = age;
+			document.getElementById("pLocation").innerHTML = loc;
+			document.getElementById("pExperience").innerHTML = years;
+			document.getElementById("pEmail").innerHTML = email;
 		}
-*/
+
 		function showMenu(){
 		var menu = document.getElementById("menu");
 		var box = document.getElementById("box-profile");
